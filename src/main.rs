@@ -1,6 +1,8 @@
 fn main() {
     let sum = sum(5, 5);
+    let divided = divide_by(10, 2);
     println!("{}", sum);
+    println!("{}", divided);
 }
 
 fn sum(num: i32, num2: i32) -> i32 {
