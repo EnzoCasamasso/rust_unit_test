@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     let sum = sum(5, 5);
     let divided = divide_by(10, 2);
@@ -32,5 +34,11 @@ mod tests {
         let divisor = 2;
         let num = 10;
         assert_eq!(5, divide_by(num, divisor));
+    }
+
+    #[test]
+    fn create_comand() -> io::Result<()> {
+        io::stdin();
+        Ok(())
     }
 }
